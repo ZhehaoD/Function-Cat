@@ -473,7 +473,7 @@ const darkModeStore = useDarkModeStore()
       <CardBox>
         <FormField label="Settings">
           <FormCheckRadioGroup
-            v-model="pillsSettingsModel"
+            v-model="circleSettingsModel"
             name="buttons-switch"
             type="switch"
             :options="{ outline: 'Outline', large: 'large', icon: 'Icon', disabled: 'Disabled'}"
@@ -483,44 +483,45 @@ const darkModeStore = useDarkModeStore()
         <BaseDivider />
 
         <BaseButtons>
-          <PillTag
+          <CircleTag
             color="contrast"
             label="Contrast"
-            :small="pillsSmall"
-            :outline="pillsOutline"
-            :icon="pillsIcon"
+            :large="circlelarge"
+            :outline="circleOutline"
+            :icon="circleIcon"
           />
-          <PillTag
+          <CircleTag
             color="info"
             label="Info"
-            :small="pillsSmall"
-            :outline="pillsOutline"
-            :icon="pillsIcon"
+            :large="circlelarge"
+            :outline="circleOutline"
+            :icon="circleIcon"
           />
-          <PillTag
+          <CircleTag
             color="success"
             label="Success"
-            :small="pillsSmall"
-            :outline="pillsOutline"
-            :icon="pillsIcon"
+            :large="circlelarge"
+            :outline="circleOutline"
+            :icon="circleIcon"
           />
-          <PillTag
+          <CircleTag
             color="warning"
             label="Warning"
-            :small="pillsSmall"
-            :outline="pillsOutline"
-            :icon="pillsIcon"
+            :large="circlelarge"
+            :outline="circleOutline"
+            :icon="circleIcon"
           />
-          <PillTag
+          <CircleTag
             color="danger"
             label="Danger"
-            :small="pillsSmall"
-            :outline="pillsOutline"
-            :icon="pillsIcon"
+            :large="circlelarge"
+            :outline="circleOutline"
+            :icon="circleIcon"
           />
         </BaseButtons>
       </CardBox>
     </SectionMain>
+    
     <SectionTitle>Cards</SectionTitle>
 
     <SectionMain>
