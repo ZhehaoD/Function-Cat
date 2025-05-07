@@ -33,5 +33,6 @@ const componentClass = computed(() => [
     :icon="icon"
     :label="label"
     :small="small"
+    :large="large"
   />
 </template>
