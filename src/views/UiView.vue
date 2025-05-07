@@ -476,7 +476,7 @@ const darkModeStore = useDarkModeStore()
             v-model="pillsSettingsModel"
             name="buttons-switch"
             type="switch"
-            :options="{ outline: 'Outline', small: 'Small', icon: 'Icon' }"
+            :options="{ outline: 'Outline', large: 'large', icon: 'Icon', disabled: 'Disabled'}"
           />
         </FormField>
 
