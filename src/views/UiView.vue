@@ -78,6 +78,11 @@ const darkModeStore = useDarkModeStore()
       <p>Lorem ipsum dolor</p>
     </CardBoxModal>
 
+    <CardBoxModal v-model="modalTwoActive" title="Unhandled exception" button="danger">
+      <p>This is sample modal</p>
+      <p>Lorem ipsum dolor</p>
+    </CardBoxModal>
+
     <CardBoxModal v-model="modalThreeActive" title="Success" button="success">
       <p>This is sample modal</p>
       <p>Lorem ipsum dolor</p>
