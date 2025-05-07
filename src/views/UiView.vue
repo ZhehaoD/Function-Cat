@@ -467,7 +467,60 @@ const darkModeStore = useDarkModeStore()
         </BaseButtons>
       </CardBox>
     </SectionMain>
+    <SectionTitle>Circle</SectionTitle>
 
+    <SectionMain>
+      <CardBox>
+        <FormField label="Settings">
+          <FormCheckRadioGroup
+            v-model="pillsSettingsModel"
+            name="buttons-switch"
+            type="switch"
+            :options="{ outline: 'Outline', small: 'Small', icon: 'Icon' }"
+          />
+        </FormField>
+
+        <BaseDivider />
+
+        <BaseButtons>
+          <PillTag
+            color="contrast"
+            label="Contrast"
+            :small="pillsSmall"
+            :outline="pillsOutline"
+            :icon="pillsIcon"
+          />
+          <PillTag
+            color="info"
+            label="Info"
+            :small="pillsSmall"
+            :outline="pillsOutline"
+            :icon="pillsIcon"
+          />
+          <PillTag
+            color="success"
+            label="Success"
+            :small="pillsSmall"
+            :outline="pillsOutline"
+            :icon="pillsIcon"
+          />
+          <PillTag
+            color="warning"
+            label="Warning"
+            :small="pillsSmall"
+            :outline="pillsOutline"
+            :icon="pillsIcon"
+          />
+          <PillTag
+            color="danger"
+            label="Danger"
+            :small="pillsSmall"
+            :outline="pillsOutline"
+            :icon="pillsIcon"
+          />
+        </BaseButtons>
+      </CardBox>
+    </SectionMain>
     <SectionTitle>Cards</SectionTitle>
 
     <SectionMain>
