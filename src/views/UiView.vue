@@ -27,7 +27,7 @@ import SectionTitleLineWithButton from '@/components/SectionTitleLineWithButton.
 import CardBoxComponentEmpty from '@/components/CardBoxComponentEmpty.vue'
 import CardBoxComponentTitle from '@/components/CardBoxComponentTitle.vue'
 import PillTag from '@/components/PillTag.vue'
-import CircleTag from '@/components/ShapeTag.vue'
+import ShapeTag from '@/components/ShapeTag.vue'
 
 const modalOneActive = ref(false)
 
@@ -58,13 +58,9 @@ const pillsSmall = computed(() => pillsSettingsModel.value.indexOf('small') > -1
 const pillsIcon = computed(() =>
   pillsSettingsModel.value.indexOf('icon') > -1 ? mdiTrendingUp : null
 )
+const ShapeSettingsModel = ref([])
+const ShapeCircle = computed(() => ShapeSettingsModel.value.indexOf('Circle') > -1)
 
-const circleSettingsModel = ref([])
-const circleOutline = computed(() => circleSettingsModel.value.indexOf('outline') > -1)
-const circleLarge = computed(() => circleSettingsModel.value.indexOf('large') > -1)
-const circleIcon = computed(() =>
-  circleSettingsModel.value.indexOf('icon') > -1? mdiTrendingUp : null
-)
 
 const darkModeStore = useDarkModeStore()
 </script>
