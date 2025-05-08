@@ -11,17 +11,16 @@ defineProps({
     default: null
   },
   large: Boolean,
-  shadow: Boolean
+  shadow: [Boolean, String]
 })
 </script>
 
 <template>
   <div
     class="inline-flex items-center justify-center capitalize leading-none rounded-full"
-    :class="[large ? 'w-20 h-20 text-lg shadow-md' : 'w-14 h-14 text-xs shadow-md']"
-    :style="shadow ? { boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' } : {}"
+    :class="[large ? 'w-20 h-20 text-lg' : 'w-14 h-14 text-xs']"
+    :style="typeof shadow === 'string' ? { filter: `drop-shadow(${shadow})` } : shadow ? { filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))' } : {}"
   >
-  <div>{{ shadow }}</div>
     <BaseIcon
       v-if="icon"
       :path="icon"

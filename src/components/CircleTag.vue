@@ -34,6 +34,6 @@ const componentClass = computed(() => [
     :icon="icon"
     :label="label"
     :large="large"
-    :shadow="shadow"
+    :shadow="'0 8px 10px rgba(0, 0, 0, 0.2)'"
   />
 </template>
