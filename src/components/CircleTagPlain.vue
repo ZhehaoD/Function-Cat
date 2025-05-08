@@ -22,8 +22,8 @@ defineProps({
     <BaseIcon
       v-if="icon"
       :path="icon"
-      h="h-6"
-      w="w-6"
+      h="h-3"
+      w="w-3"
       :class="large ? 'mr-2' : 'mr-1'"
       :size="large ? 20 : 14"
     />
