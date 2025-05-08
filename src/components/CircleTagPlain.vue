@@ -10,14 +10,15 @@ defineProps({
     type: String,
     default: null
   },
-  large: Boolean
+  large: Boolean,
+  shadow: Boolean
 })
 </script>
 
 <template>
   <div
     class="inline-flex items-center justify-center capitalize leading-none rounded-full"
-    :class="[large ? 'w-20 h-20 text-lg' : 'w-14 h-14 text-xs']"
+    :class="[large ? 'w-20 h-20 text-lg' : 'w-14 h-14 text-xs', shadow ? 'shadow-md' : '']"
   >
     <BaseIcon
       v-if="icon"
