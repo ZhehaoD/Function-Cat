@@ -21,6 +21,7 @@ defineProps({
     :class="[large ? 'w-20 h-20 text-lg' : 'w-14 h-14 text-xs']"
     :style="shadow ? { filter: 'drop-shadow(10px 5px 5px rgba(0, 0, 0, 0.5))' } : {filter: 'none' }"
   >
+  <div>{{ shadow }}</div>
     <BaseIcon
       v-if="icon"
       :path="icon"
