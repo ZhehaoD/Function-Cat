@@ -16,12 +16,12 @@ const props = defineProps({
     type: String,
     default: null
   },
-  Circle: Boolean,
+  large: Boolean,
   outline: Boolean
 })
 
 const componentClass = computed(() => [
-  Circle ? 'py-2 px-4' : 'py-1 px-2',
+  props.large ? 'py-2 px-4' : 'py-1 px-2',
   props.outline ? colorsOutline[props.color] : colorsBgLight[props.color]
 ])
 </script>
@@ -32,6 +32,6 @@ const componentClass = computed(() => [
     :class="componentClass"
     :icon="icon"
     :label="label"
-    :Circle="Circle"
+    :large="large"
   />
 </template>
