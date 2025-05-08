@@ -19,7 +19,7 @@ defineProps({
   <div
     class="inline-flex items-center justify-center capitalize leading-none rounded-full"
     :class="[large ? 'w-20 h-20 text-lg' : 'w-14 h-14 text-xs']"
-    :style="shadow ? { filter: 'drop-shadow(10px 5px 5px rgba(0, 0, 0, 0.5))' } : {filter: 'none' }"
+    :style="shadow ? { filter: 'drop-shadow(10px 5px 5px rgba(0, 0, 0, 0.5))' } : {}"
   >
   <div>{{ shadow }}</div>
     <BaseIcon
