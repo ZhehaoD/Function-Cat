@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { colorsBgLight, colorsOutline } from '@/colors.js'
-import CiecleTagPlain from '@/components/CircleTagPlain.vue'
+import CircleTagPlain from '@/components/CircleTagPlain.vue'
 
 const props = defineProps({
   label: {
@@ -21,13 +21,13 @@ const props = defineProps({
 })
 
 const componentClass = computed(() => [
-  props.large ? 'py-1 px-3' : 'py-1.5 px-4',
+  props.large ? 'py-2 px-4' : 'py-1 px-2',
   props.outline ? colorsOutline[props.color] : colorsBgLight[props.color]
 ])
 </script>
 
 <template>
-  <CiecleTagPlain
+  <CircleTagPlain
     class="border rounded-full"
     :class="componentClass"
     :icon="icon"
