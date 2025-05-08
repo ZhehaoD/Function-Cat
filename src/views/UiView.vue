@@ -531,7 +531,6 @@ const darkModeStore = useDarkModeStore()
             :outline="circleOutline"
             :icon="circleIcon"
             :shadow="circleShadow"
-
           />
         </BaseButtons>
       </CardBox>
