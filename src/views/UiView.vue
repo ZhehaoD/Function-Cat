@@ -485,7 +485,7 @@ const darkModeStore = useDarkModeStore()
             v-model="circleSettingsModel"
             name="buttons-switch"
             type="switch"
-            :options="{ outline: 'Outline', large: 'large', icon: 'Icon', disabled: 'Disabled'}"
+            :options="{ outline: 'Outline', large: 'Large', icon: 'Icon', disabled: 'Disabled'}"
           />
         </FormField>
 
@@ -495,35 +495,35 @@ const darkModeStore = useDarkModeStore()
           <CircleTag
             color="contrast"
             label="Contrast"
-            :large="circlelarge"
+            :large="circleLarge"
             :outline="circleOutline"
             :icon="circleIcon"
           />
           <CircleTag
             color="info"
             label="Info"
-            :large="circlelarge"
+            :large="circleLarge"
             :outline="circleOutline"
             :icon="circleIcon"
           />
           <CircleTag
             color="success"
             label="Success"
-            :large="circlelarge"
+            :large="circleLarge"
             :outline="circleOutline"
             :icon="circleIcon"
           />
           <CircleTag
             color="warning"
             label="Warning"
-            :large="circlelarge"
+            :large="circleLarge"
             :outline="circleOutline"
             :icon="circleIcon"
           />
           <CircleTag
             color="danger"
             label="Danger"
-            :large="circlelarge"
+            :large="circleLarge"
             :outline="circleOutline"
             :icon="circleIcon"
           />

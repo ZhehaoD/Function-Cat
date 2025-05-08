@@ -17,7 +17,7 @@ defineProps({
 <template>
   <div
     class="inline-flex items-center capitalize leading-none"
-    :class="[small ? 'text-xs' : 'text-sm']"
+    :class="[large ? 'text-sm' : 'text-xs']"
   >
     <BaseIcon
       v-if="icon"
@@ -25,7 +25,7 @@ defineProps({
       h="h-4"
       w="w-4"
       :class="large ? 'mr-1' : 'mr-2'"
-      :size="small ? 14 : null"
+      :size="large ? null : 14"
     />
     <span>{{ label }}</span>
   </div>
