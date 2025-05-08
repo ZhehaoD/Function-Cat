@@ -11,7 +11,7 @@ defineProps({
     default: null
   },
   large: Boolean,
-  shadow: [Boolean, String]
+  shadow: Boolean
 })
 </script>
 
@@ -19,7 +19,7 @@ defineProps({
   <div
     class="inline-flex items-center justify-center capitalize leading-none rounded-full"
     :class="[large ? 'w-20 h-20 text-lg' : 'w-14 h-14 text-xs']"
-    :style="typeof shadow === 'string' ? { filter: `drop-shadow(${shadow})` } : shadow ? { filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))' } : {}"
+    :style="shadow ? { filter: 'drop-shadow(10px 5px 5px rgba(0, 0, 0, 0.1))' } : {}"
   >
     <BaseIcon
       v-if="icon"
