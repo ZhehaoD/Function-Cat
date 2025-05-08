@@ -10,7 +10,7 @@ defineProps({
     type: String,
     default: null
   },
-  small: Boolean
+  large: Boolean
 })
 </script>
 
@@ -24,7 +24,7 @@ defineProps({
       :path="icon"
       h="h-4"
       w="w-4"
-      :class="small ? 'mr-1' : 'mr-2'"
+      :class="large ? 'mr-1' : 'mr-2'"
       :size="small ? 14 : null"
     />
     <span>{{ label }}</span>

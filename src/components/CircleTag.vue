@@ -1,52 +1,37 @@
+<script setup>
+import { computed } from 'vue'
+import { colorsBgLight, colorsOutline } from '@/colors.js'
+import CiecleTagPlain from '@/components/CircleTagPlain.vue'
+
+const props = defineProps({
+  label: {
+    type: String,
+    required: true
+  },
+  color: {
+    type: String,
+    required: true
+  },
+  icon: {
+    type: String,
+    default: null
+  },
+  large: Boolean,
+  outline: Boolean
+})
+
+const componentClass = computed(() => [
+  props.large ? 'py-1 px-3' : 'py-1.5 px-4',
+  props.outline ? colorsOutline[props.color] : colorsBgLight[props.color]
+])
+</script>
+
 <template>
-    <button
-      class="flex items-center justify-center h-8 w-8 rounded-full focus:outline-none"
-      :disabled="disabled"
-    >
-      <template v-if="icon">
-        <font-awesome-icon :icon="icon" />
-      </template>
-      <template v-else>
-        <span>{{ label }}</span>
-      </template>
-    </button>
-  </template>
-  
-  <script setup>
-  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-  import { library } from '@fortawesome/fontawesome-svg-core'
-  import { faCheck } from '@fortawesome/free-solid-svg-icons'
-  
-  library.add(faCheck)
-  
-  const props = defineProps({
-    color: {
-      type: String,
-      default: 'contrast'
-    },
-    label: {
-      type: String,
-      default: ''
-    },
-    outline: {
-      type: Boolean,
-      default: false
-    },
-    icon: {
-      type: String,
-      default: null
-    },
-    disabled: {
-      type: Boolean,
-      default: false
-    }
-  })
-  </script>
-  
-  <style scoped>
-  /* 可以根据需要调整样式 */
-  button {
-    cursor: pointer;
-    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-  }
-  </style>
+  <CiecleTagPlain
+    class="border rounded-full"
+    :class="componentClass"
+    :icon="icon"
+    :label="label"
+    :large="large"
+  />
+</template>
