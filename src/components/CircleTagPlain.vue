@@ -18,7 +18,7 @@ defineProps({
 <template>
   <div
     class="inline-flex items-center justify-center capitalize leading-none rounded-full"
-    :class="[large ? 'w-20 h-20 text-lg shadow-md' : 'w-14 h-14 text-xs shadow-md', shadow ? 'shadow-md' : '']"
+    :class="[large ? 'w-20 h-20 text-lg' : 'w-14 h-14 text-xs', shadow ? 'shadow-md' : '']"
   >
   <div>{{ shadow }}</div>
     <BaseIcon
