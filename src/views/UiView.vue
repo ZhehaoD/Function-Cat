@@ -65,7 +65,7 @@ const circleLarge = computed(() => circleSettingsModel.value.indexOf('large') > 
 const circleIcon = computed(() =>
   circleSettingsModel.value.indexOf('icon') > -1? mdiTrendingUp : null
 )
-const circleShadow = computed(() => circleSettingsModel.value.indexOf('shadow') > -1)
+
 const darkModeStore = useDarkModeStore()
 </script>
 
@@ -485,7 +485,7 @@ const darkModeStore = useDarkModeStore()
             v-model="circleSettingsModel"
             name="buttons-switch"
             type="switch"
-            :options="{ outline: 'Outline', large: 'Large', icon: 'Icon',shadow:'shadow'}"
+            :options="{ outline: 'Outline', large: 'Large', icon: 'Icon', disabled: 'Disabled'}"
           />
         </FormField>
 
@@ -498,7 +498,6 @@ const darkModeStore = useDarkModeStore()
             :large="circleLarge"
             :outline="circleOutline"
             :icon="circleIcon"
-            :shadow="circleShadow"
           />
           <CircleTag
             color="info"
@@ -506,7 +505,6 @@ const darkModeStore = useDarkModeStore()
             :large="circleLarge"
             :outline="circleOutline"
             :icon="circleIcon"
-            :shadow="circleShadow"
           />
           <CircleTag
             color="success"
@@ -514,7 +512,6 @@ const darkModeStore = useDarkModeStore()
             :large="circleLarge"
             :outline="circleOutline"
             :icon="circleIcon"
-            :shadow="circleShadow"
           />
           <CircleTag
             color="warning"
@@ -522,7 +519,6 @@ const darkModeStore = useDarkModeStore()
             :large="circleLarge"
             :outline="circleOutline"
             :icon="circleIcon"
-            :shadow="circleShadow"
           />
           <CircleTag
             color="danger"
@@ -530,7 +526,6 @@ const darkModeStore = useDarkModeStore()
             :large="circleLarge"
             :outline="circleOutline"
             :icon="circleIcon"
-            :shadow="circleShadow"
           />
         </BaseButtons>
       </CardBox>
