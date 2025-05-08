@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { colorsBgLight, colorsOutline } from '@/colors.js'
-import CircleTagPlain from '@/components/CircleTagPlain.vue'
+import ShapeTagPlain from '@/components/ShapeTagPlain.vue'
 
 const props = defineProps({
   label: {
@@ -27,7 +27,7 @@ const componentClass = computed(() => [
 </script>
 
 <template>
-  <CircleTagPlain
+  <ShapeTagPlain
     class="border rounded-full"
     :class="componentClass"
     :icon="icon"

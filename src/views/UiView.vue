@@ -27,7 +27,7 @@ import SectionTitleLineWithButton from '@/components/SectionTitleLineWithButton.
 import CardBoxComponentEmpty from '@/components/CardBoxComponentEmpty.vue'
 import CardBoxComponentTitle from '@/components/CardBoxComponentTitle.vue'
 import PillTag from '@/components/PillTag.vue'
-import CircleTag from '@/components/CircleTag.vue'
+import CircleTag from '@/components/ShapeTag.vue'
 
 const modalOneActive = ref(false)
 
@@ -476,56 +476,46 @@ const darkModeStore = useDarkModeStore()
       </CardBox>
     </SectionMain>
     
-    <SectionTitle>Circle</SectionTitle>
+    <SectionTitle>Shape</SectionTitle>
 
     <SectionMain>
       <CardBox>
         <FormField label="Settings">
           <FormCheckRadioGroup
-            v-model="circleSettingsModel"
+            v-model="ShapeSettingsModel"
             name="buttons-switch"
             type="switch"
-            :options="{ outline: 'Outline', large: 'Large', icon: 'Icon', disabled: 'Disabled'}"
+            :options="{ outline: 'Outline', Circle: 'Circle'}"
           />
         </FormField>
 
         <BaseDivider />
 
         <BaseButtons>
-          <CircleTag
+          <ShapeTag
             color="contrast"
             label="Contrast"
-            :large="circleLarge"
-            :outline="circleOutline"
-            :icon="circleIcon"
+            :Circle="ShapeCircle"
           />
-          <CircleTag
+          <ShapeTag
             color="info"
             label="Info"
-            :large="circleLarge"
-            :outline="circleOutline"
-            :icon="circleIcon"
+            :Circle="ShapeCircle"
           />
-          <CircleTag
+          <ShapeTag
             color="success"
             label="Success"
-            :large="circleLarge"
-            :outline="circleOutline"
-            :icon="circleIcon"
+            :Circle="ShapeCircle"
           />
-          <CircleTag
+          <ShapeTag
             color="warning"
             label="Warning"
-            :large="circleLarge"
-            :outline="circleOutline"
-            :icon="circleIcon"
+            :Circle="ShapeCircle"
           />
-          <CircleTag
+          <ShapeTag
             color="danger"
             label="Danger"
-            :large="circleLarge"
-            :outline="circleOutline"
-            :icon="circleIcon"
+            :Circle="ShapeCircle"
           />
         </BaseButtons>
       </CardBox>
