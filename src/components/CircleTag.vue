@@ -1,7 +1,6 @@
 <template>
     <button
       class="flex items-center justify-center h-8 w-8 rounded-full focus:outline-none"
-      :class="['bg-' + color, { 'border-' + color: outline, 'text-' + color: outline }]"
       :disabled="disabled"
     >
       <template v-if="icon">
