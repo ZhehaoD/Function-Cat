@@ -485,7 +485,7 @@ const darkModeStore = useDarkModeStore()
             v-model="circleSettingsModel"
             name="buttons-switch"
             type="switch"
-            :options="{ outline: 'Outline', large: 'Large', icon: 'Icon',shadow:'shadow'}"
+            :options="{ outline: 'Outline', large: 'Large', icon: 'Icon',shadow:'Shadow'}"
           />
         </FormField>
 
