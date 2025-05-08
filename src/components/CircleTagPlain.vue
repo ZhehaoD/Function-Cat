@@ -17,15 +17,15 @@ defineProps({
 <template>
   <div
     class="inline-flex items-center justify-center capitalize leading-none rounded-full"
-    :class="[large ? 'w-20 h-20 text-lg' : 'w-15 h-15 text-xs']"
+    :class="[large ? 'w-20 h-20 text-lg' : 'w-15 h-15 text-sm']"
   >
     <BaseIcon
       v-if="icon"
       :path="icon"
-      h="h-3"
-      w="w-3"
+      h="h-4"
+      w="w-4"
       :class="large ? 'mr-2' : 'mr-1'"
-      :size="large ? 20 : 14"
+      :size="large ? 20 : 16"
     />
     <span>{{ label }}</span>
   </div>
