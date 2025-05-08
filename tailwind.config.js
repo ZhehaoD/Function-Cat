@@ -39,6 +39,10 @@ module.exports = {
         "fade-out": "fade-out 250ms ease-in-out",
         "fade-in": "fade-in 250ms ease-in-out",
       },
+      boxShadow: {
+        md: '0 4px 6px rgba(0, 0, 0, 0.1)',
+        lg: '0 10px 15px rgba(0, 0, 0, 0.1)',
+      },
     },
   },
   plugins: [
