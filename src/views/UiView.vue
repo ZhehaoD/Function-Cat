@@ -27,7 +27,7 @@ import SectionTitleLineWithButton from '@/components/SectionTitleLineWithButton.
 import CardBoxComponentEmpty from '@/components/CardBoxComponentEmpty.vue'
 import CardBoxComponentTitle from '@/components/CardBoxComponentTitle.vue'
 import PillTag from '@/components/PillTag.vue'
-import CircleTag from '@/components/ShapeTag.vue'
+import CircleTag from '@/components/CircleTag.vue'
 
 const modalOneActive = ref(false)
 
