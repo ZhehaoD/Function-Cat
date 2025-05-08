@@ -17,7 +17,7 @@ defineProps({
 <template>
   <div
     class="inline-flex items-center justify-center capitalize leading-none rounded-full"
-    :class="[large ? 'w-16 h-16 text-lg' : 'w-8 h-8 text-xs', 'bg-gray-200']"
+    :class="[large ? 'w-16 h-16 text-lg' : 'w-15 h-15 text-xs', 'bg-gray-200']"
   >
     <BaseIcon
       v-if="icon"
