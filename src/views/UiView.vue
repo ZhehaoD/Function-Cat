@@ -27,11 +27,7 @@ import SectionTitleLineWithButton from '@/components/SectionTitleLineWithButton.
 import CardBoxComponentEmpty from '@/components/CardBoxComponentEmpty.vue'
 import CardBoxComponentTitle from '@/components/CardBoxComponentTitle.vue'
 import PillTag from '@/components/PillTag.vue'
-<<<<<<< HEAD
-import CircleTag from '@/components/CircleTag.vue'
-=======
 import CircleTag from '@/components/ShapeTag.vue'
->>>>>>> parent of fd96660 (shape)
 
 const modalOneActive = ref(false)
 
