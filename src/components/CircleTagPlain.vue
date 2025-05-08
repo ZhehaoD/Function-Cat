@@ -16,8 +16,9 @@ defineProps({
 
 <template>
   <div
-    class="inline-flex items-center justify-center capitalize leading-none"
-    :class="[Circle ? 'w-15 h-15 rounded-full' : 'w-20 h-10 rounded-lg']"
+    class="inline-flex items-center justify-center capitalize leading-none rounded-full"
+    :class="[large ? 'w-20 h-20 text-lg' : 'w-8 h-8 text-lg']"
+>>>>>>> parent of ab164d2 (Shape):src/components/CircleTagPlain.vue
   >
     <BaseIcon
       v-if="icon"
