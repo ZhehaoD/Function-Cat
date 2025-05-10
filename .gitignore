@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -26,3 +27,13 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+=======
+.DS_Store
+/.obsidian
+plugins
+core-plugins.json
+community-plugins.json		
+core-plugins-migration.json
+workspace.json
+build*
+>>>>>>> parent of ba7929b (delete)
