@@ -1,0 +1,20 @@
+system: 1.0.0
+info:
+  name: admin one vue
+envs:
+  prod:
+    branch: master
+routes:
+  main_env: prod
+  main_app: frontend
+apps:
+  frontend:
+    type: web_frontend
+    envs:
+      prod:
+        build:
+          root_path: ./
+          script: npm run build
+        provision:
+          root_path: dist
+          type: nodejs18x
