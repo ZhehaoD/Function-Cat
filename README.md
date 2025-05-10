@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # 模板介绍
 
@@ -375,6 +376,8 @@ The issue list is reserved exclusively for bug reports and feature requests. Tha
 - [Vue.js 3](https://v3.vuejs.org/)
 - [Vite](https://vitejs.dev)
 =======
+=======
+>>>>>>> parent of ba7929b (delete)
 <p align="right">
 	English / 
 	<a href="https://github.com/BingyanStudio/LapisCV/blob/main/README-CN.md">
@@ -637,5 +640,9 @@ This project is licensed under the [MIT License](https://github.com/BingyanStudi
 
 ## Star History
 
+<<<<<<< HEAD
+[![Stargazers over time](https://starchart.cc/BingyanStudio/LapisCV.svg?background=%23ffffff00&axis=%23808080&line=%234870ad)](https://starchart.cc/BingyanStudio/LapisCV)
+>>>>>>> parent of ba7929b (delete)
+=======
 [![Stargazers over time](https://starchart.cc/BingyanStudio/LapisCV.svg?background=%23ffffff00&axis=%23808080&line=%234870ad)](https://starchart.cc/BingyanStudio/LapisCV)
 >>>>>>> parent of ba7929b (delete)

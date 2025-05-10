@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -28,6 +29,8 @@ coverage
 *.sln
 *.sw?
 =======
+=======
+>>>>>>> parent of ba7929b (delete)
 .DS_Store
 /.obsidian
 plugins
@@ -35,5 +38,9 @@ core-plugins.json
 community-plugins.json		
 core-plugins-migration.json
 workspace.json
+<<<<<<< HEAD
+build*
+>>>>>>> parent of ba7929b (delete)
+=======
 build*
 >>>>>>> parent of ba7929b (delete)
