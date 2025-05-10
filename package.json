@@ -6,7 +6,6 @@
     "scripts": {
         "build": "vue-cli-service build" 
     },
-    
     "author": "",
     "license": "ISC",
     "dependencies": {},
