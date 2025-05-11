@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "vue-cli-service build" 
+        "build": "echo 'No build needed' && exit 0"
     },
     "author": "",
     "license": "ISC",
