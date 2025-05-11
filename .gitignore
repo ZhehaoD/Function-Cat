@@ -1,36 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-node_modules
-.DS_Store
-dist
-dist-ssr
-coverage
-*.local
-
-/cypress/videos/
-/cypress/screenshots/
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-=======
-=======
->>>>>>> parent of ba7929b (delete)
 .DS_Store
 /.obsidian
 plugins
@@ -38,9 +5,4 @@ core-plugins.json
 community-plugins.json		
 core-plugins-migration.json
 workspace.json
-<<<<<<< HEAD
 build*
->>>>>>> parent of ba7929b (delete)
-=======
-build*
->>>>>>> parent of ba7929b (delete)
