@@ -4,7 +4,6 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        // 假设这里是实际的构建命令，你需要根据项目实际情况修改
         "build": "vue-cli-service build" 
     },
     "author": "",
